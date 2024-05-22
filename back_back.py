@@ -1330,4 +1330,4 @@ def Assistant(query_assitant):
     tools_agents_handler(tools_called)
     return f" {tools_called} \n\nTask Performed.."
 
-#Assistant("What are my today sales, check in inventory, and mail the result to akhilsonga1@gmail.com and saitanmai")
+#Assistant("What are my today sales, check in inventory, and mail the result to akhilsonga1@gmail.com by today 9PM")
