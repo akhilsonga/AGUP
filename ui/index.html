@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AGUP Stock Screener</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+  <header>
+    <h1>AGUP Stock Screener</h1>
+    <div class="header-actions">
+      <button id="theme-toggle">Toggle Theme</button>
+      <button id="chat-toggle">Chat</button>
+    </div>
+  </header>
+  <main>
+    <aside class="filters">
+      <input type="text" id="search-input" placeholder="Search stocks...">
+    </aside>
+    <section class="stocks">
+      <ul id="stock-list">
+        <li data-symbol="TATASTEEL">Tata Steel</li>
+        <li data-symbol="INFY">Infosys</li>
+        <li data-symbol="RELIANCE">Reliance Industries</li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="zen-mode" class="hidden">
+    <div class="zen-header">
+      <span id="zen-close">&times;</span>
+      <h2 id="company-name">Company</h2>
+    </div>
+    <div class="zen-content">
+      <div class="company-details">
+        <h3>Fundamentals</h3>
+        <p>...</p>
+        <h3>Announcements</h3>
+        <p>...</p>
+        <h3>News</h3>
+        <p>...</p>
+      </div>
+      <div class="company-chat">
+        <div class="messages" id="company-messages"></div>
+        <input type="text" id="company-input" placeholder="Ask about this company...">
+      </div>
+    </div>
+  </div>
+
+  <div id="universal-chat" class="hidden">
+    <div class="chat-header">
+      <span id="chat-close">&times;</span>
+      <h2>AI Chat</h2>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Ask any stock question...">
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
