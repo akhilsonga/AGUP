@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #0066ff;
+}
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #dddddd;
+  --accent-color: #00ccff;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+}
+header button {
+  margin-left: 0.5rem;
+}
+main {
+  display: flex;
+}
+.filters {
+  width: 200px;
+  padding: 1rem;
+  border-right: 1px solid var(--accent-color);
+}
+.stocks {
+  flex: 1;
+  padding: 1rem;
+}
+#stock-list li {
+  list-style: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+#zen-mode,
+#universal-chat {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+}
+#zen-mode .zen-header,
+#universal-chat .chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#zen-close,
+#chat-close {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+#universal-chat {
+  width: 300px;
+  left: auto;
+  border-left: 1px solid var(--accent-color);
+}
+.chat-messages,
+#company-messages {
+  height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--accent-color);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
